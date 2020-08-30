@@ -1,5 +1,5 @@
 --========CREATE DATABASE
---====================================================
+--=====================PASO 1===============================
 -- Database: prueba_app
 -- DROP DATABASE prueba_app;
 CREATE DATABASE prueba_app
@@ -11,7 +11,7 @@ CREATE DATABASE prueba_app
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;
 
----========================================================
+---===============PASO 2=========================================
 -- SEQUENCE: public.TableType_Id_seq
 -- DROP SEQUENCE public."TableType_Id_seq";
 CREATE SEQUENCE public."TableType_Id_seq"
@@ -133,7 +133,7 @@ ALTER TABLE public."TableData3"
 
 
 
---*************INSERT**********************
+--*************INSERT PASO 3**********************
 --***********************************
 INSERT INTO public."TableType"("Name") VALUES ('Tabla 1');
 INSERT INTO public."TableType"("Name") VALUES ('Tabla 2');
