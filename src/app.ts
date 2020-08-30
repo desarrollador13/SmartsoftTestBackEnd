@@ -4,7 +4,7 @@ import morgan from 'morgan';
 const app: express.Application = express();
 
 async function loadServer() {
-	  app.use(morgan('dev'))
+	app.use(morgan('dev'))
     await require('./loaders').default({ expressApp: app });
 } 
 

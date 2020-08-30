@@ -6,7 +6,7 @@ import MigratedatabaseController from '../../controllers/MigratedatabaseControll
 
 
 export default class routerServices {
-  public app: Router
+  public app:Router
   constructor(router: Router) {
     this.app = router
   }

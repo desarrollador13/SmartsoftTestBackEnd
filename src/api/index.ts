@@ -7,7 +7,7 @@ import  routerServices from './routes/routerServices'
 
 class GeneralRouter {
   public router:Router
-  private routerServices:any
+  private routerServices:routerServices|any
 
   constructor() {
     this.router = Router()

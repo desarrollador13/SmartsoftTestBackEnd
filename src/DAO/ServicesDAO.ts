@@ -10,7 +10,7 @@ export class ServicesDAO {
 	/**
 	@router 
     **/
-	public async getTables(): Promise<any> {
+	public async getTables():Promise<any> {
 		let data: any
 		try {
 		  const connection = await this.databaseConnection.getPool()
@@ -66,7 +66,7 @@ export class ServicesDAO {
 		}
 	}
 
-	public async getDataTable(): Promise<any> {
+	public async getDataTable():Promise<any> {
 		let data: any
 		try {
 		  const connection = await this.databaseConnection.getPool()
@@ -116,7 +116,7 @@ export class ServicesDAO {
 	/**
 	@router 
     **/
-	public async updateTables(colums:string, values:Array<any>, table:string, params:number): Promise<any> {
+	public async updateTables(colums:string, values:Array<any>, table:string, params:number):Promise<any> {
 		let data: any
 		let query:any
 		try {
@@ -147,7 +147,7 @@ export class ServicesDAO {
 	/**
 	@router 
     **/
-	public async saveTables(colums:string, values:Array<any>, table:string): Promise<any> {
+	public async saveTables(colums:string, values:Array<any>, table:string):Promise<any> {
 		let data: any
 		let query:any
 		try {
@@ -175,7 +175,7 @@ export class ServicesDAO {
 		}
 	}
 
-	public async deleteTables(values:Array<any>, table:string, params:number): Promise<any> {
+	public async deleteTables(values:Array<any>, table:string, params:number):Promise<any> {
 		let data: any
 		let query:any
 		try {
@@ -203,7 +203,7 @@ export class ServicesDAO {
 		}
 	}
 
-	public async listarSchema(): Promise<any> {
+	public async listarSchema():Promise<any> {
 		let data: any
 		try {
 		  const connection = await this.databaseConnection.getPool()
@@ -224,7 +224,7 @@ export class ServicesDAO {
 		}
 	}
 
-	public async listarBases(): Promise<any> {
+	public async listarBases():Promise<any> {
 		let data: any
 		try {
 		  const connection = await this.databaseConnection.getPool()

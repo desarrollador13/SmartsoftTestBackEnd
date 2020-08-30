@@ -363,33 +363,30 @@ export class MigratedatabaseDAO {
 			]
 
 			for(let x in arrayIns1){
-				console.log(arrayIns1[x],`insert ${x}`)
+				//console.log(arrayIns1[x],`insert ${x}`)
 				resIu1=await pool.query(`${arrayIns1[x]}`)
 			}
-
 			for(let x in arrayIns2){
-				console.log(arrayIns2[x],`insert ${x}`)
+				//console.log(arrayIns2[x],`insert ${x}`)
 				resIu2=await pool.query(`${arrayIns2[x]}`)
 			}
-
 			for(let x in arrayIns3){
-				console.log(arrayIns3[x],`insert ${x}`) 
+				//console.log(arrayIns3[x],`insert ${x}`) 
 				resIu3=await pool.query(`${arrayIns3[x]}`)
 			}
-
 			for(let x in arrayIns4){
-				console.log(arrayIns4[x],`insert ${x}`)
+				//console.log(arrayIns4[x],`insert ${x}`)
 				resIu4=await pool.query(`${arrayIns4[x]}`)
 			}
 
 			resIu5=await pool.query(`INSERT INTO public."TableData1"("T1C1", "T1C2", "T1C3", "T1C4") 
-															VALUES ($1,$2,$3,$4)`, [1,	'PRUEBA', 10, '2020-08-28'])
+														VALUES ($1,$2,$3,$4)`, [1,	'PRUEBA', 10, '2020-08-28'])
 
 			resIu6=await pool.query(`INSERT INTO public."TableData2"("T2C1", "T2C2", "T2C3", "T2C4", "T2C5") 
-																VALUES  ($1,$2,$3,$4,$5)`,[2,	'PRUEBA', 10, '2020-08-28', 11]);
+													    VALUES  ($1,$2,$3,$4,$5)`,[2,	'PRUEBA', 10, '2020-08-28', 11]);
 
 			resIu7=await pool.query(`INSERT INTO public."TableData3"("T3C1", "T3C2", "T3C3") 
-															VALUES ($1,$2,$3)`,[3, 'PRUEBA', '2020-08-28']);
+														VALUES ($1,$2,$3)`,[3, 'PRUEBA', '2020-08-28']);
 			
 			prue=await pool.query(`SELECT "T1C1", "T1C2", "T1C3" FROM public."TableData1";`)
 

@@ -44,7 +44,7 @@ export default class ServicesController {
 		}
 	}
 
-	async saveTables(requets:object|any): Promise<any> {
+	async saveTables(requets:object|any):Promise<any> {
 		let res:any;
 		let colums:string=''
 		let values:Array<any>=[]
